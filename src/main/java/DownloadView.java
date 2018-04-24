@@ -33,7 +33,7 @@ public class DownloadView implements Serializable {
 
         try {
             OutputStream out = ec.getResponseOutputStream();
-            InputStream in = null;
+            InputStream in;
             in = new FileInputStream(pathname);
             IOUtils.copy(in, out);
             in.close();

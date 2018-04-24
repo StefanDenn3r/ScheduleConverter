@@ -21,7 +21,7 @@ public class UploadView implements Serializable {
             if (id != 0) {
                 FacesContext.getCurrentInstance()
                             .getExternalContext()
-                            .redirect("/Stundenplan-1.0-SNAPSHOT/download.xhtml?faces-redirect=true&id=" + id);
+                            .redirect("/ScheduleConverter-0.0.1/download.xhtml?faces-redirect=true&id=" + id);
             }
         } catch (IOException e) {
             e.printStackTrace();

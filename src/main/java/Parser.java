@@ -27,15 +27,14 @@ import static java.util.Arrays.asList;
 public class Parser {
 
     private static final int columnWidth = 138;
-    private static final int columnHeight = 427;
     private static final int rowHeight = 72;
     private static final int offsetY = 124;
 
     private static int id = 0;
 
-    public static final String PATH = "/Users/stefan/IdeaProjects/Stundenplan/src/main/resources/results/file";
+    static final String PATH = "/Users/stefan/IdeaProjects/ScheduleConverter/src/main/resources/results/file";
 
-    public int parsePDF(InputStream inputStream) {
+    int parsePDF(InputStream inputStream) {
         id++;
         int idTemp = id;
         String pathname = PATH + idTemp + ".ics";
@@ -158,7 +157,7 @@ public class Parser {
         }
     }
 
-    public VEvent generateEvent(Event event) {
+    private VEvent generateEvent(Event event) {
         VEvent vEvent = new VEvent();
 
         vEvent.setSummary(event.getTitle());
