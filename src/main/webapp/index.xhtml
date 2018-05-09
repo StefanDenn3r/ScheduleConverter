@@ -1,19 +1,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core"
       xmlns:p="http://primefaces.org/ui">
 
 <h:head>
+    <h:outputStylesheet library="css" name="prettify.css"/>
+    <h:outputStylesheet library="css" name="style.css"/>
 
 </h:head>
 
 <h:body>
-<h1>Konvertiert Uni-Würzburg Stundenplan als PDF in eine Kalendardatei(.ics)</h1>
-    <h:form id="upload">
-        <p:fileUpload fileUploadListener="#{uploadView.handleFileUpload}" mode="advanced" dragDropSupport="false"
-                      sizeLimit="10000000" auto="true" allowTypes="/(\.|\/)(pdf)$/"/>
-    </h:form>
+    <div class="col-lg-1">
+        <h1>Konvertiert Uni-Würzburg Stundenplan als PDF in eine Kalendardatei(.ics)</h1>
+        <h:form id="upload">
+            <p:fileUpload fileUploadListener="#{uploadView.handleFileUpload}" mode="advanced" dragDropSupport="false"
+                          sizeLimit="10000000" auto="true" allowTypes="/(\.|\/)(pdf)$/"/>
+        </h:form>
 
-    <p>Awards: Best UI in 2018</p>
+        <p>Awards: Best UI in 2018</p>
+    </div>
 </h:body>
 </html>
