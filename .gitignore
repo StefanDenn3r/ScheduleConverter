@@ -1,7 +1,0 @@
-# Created by .ignore support plugin (hsz.mobi)
-/target/
-/src/main/resources/results/
-/.idea/
-/src/main/main.iml
-/src/main/webapp/WEB-INF/ScheduleConverter-ds.xml
-/.gitignore
