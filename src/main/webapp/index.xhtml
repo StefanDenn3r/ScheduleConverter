@@ -5,11 +5,16 @@
 <h:head>
     <h:outputStylesheet library="css" name="prettify.css"/>
     <h:outputStylesheet library="css" name="style.css"/>
+    <h:outputStylesheet name="bootstrap/css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
 
 </h:head>
 
 <h:body>
-    <div class="col-lg-1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <h:outputScript name="bootstrap/js/bootstrap.min.js"/>
+    <div>
         <h1>Konvertiert Uni-Würzburg Stundenplan als PDF in eine Kalendardatei(.ics)</h1>
         <h:form id="upload">
             <p:fileUpload fileUploadListener="#{uploadView.handleFileUpload}" mode="advanced" dragDropSupport="false"
